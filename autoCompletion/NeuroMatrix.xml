@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<NotepadPlus>
+	<!-- language doesnt really mean anything, its more of a comment -->
+	<AutoComplete language="NeuroMatrix">
+		<!--
+		Environment specifies how the language should be interpreted. ignoreCase makes autocomplete
+		ignore any casing, start and stopFunc specify what chars a function starts and stops with.
+		param specifies parameter separator and terminal can be used to specify a character that stops
+		any function. Using the same character for different functions results in undefined behaviour.
+		
+		05/11/2009
+		The basic word character are : A-Z a-z 0-9 and '_' *
+		If your function name contains other characters,
+		add your characters in "additionalWordChar" attribute (without separator)
+		in order to make calltip hint work
+		-->
+		<Environment ignoreCase="yes" startFunc="(" stopFunc=")" paramSeparator="," terminal=";" additionalWordChar=""/>
+			<KeyWord name="fpu" func="yes"/>
+			<KeyWord name="activate" func="yes"/>
+			<KeyWord name="addr" func="yes"/>
+			<KeyWord name="and" func="yes"/>
+			<KeyWord name="branch" func="yes"/>
+			<KeyWord name="call" func="yes"/>
+			<KeyWord name="callrel" func="yes"/>
+			<KeyWord name="carry" func="yes"/>
+			<KeyWord name="cfalse" func="yes"/>
+			<KeyWord name="clear" func="yes"/>
+			<KeyWord name="code" func="yes"/>
+			<KeyWord name="common" func="yes"/>
+			<KeyWord name="const" func="yes"/>
+			<KeyWord name="ctrue" func="yes"/>
+			<KeyWord name="delayed" func="yes"/>
+			<KeyWord name="double" func="yes"/>
+			<KeyWord name="dup" func="yes"/>
+			<KeyWord name="endif" func="yes"/>
+			<KeyWord name="else" func="yes"/>
+			<KeyWord name="false" func="yes"/>
+			<KeyWord name="flag" func="yes"/>
+			<KeyWord name="float" func="yes"/>
+			<KeyWord name="ftw" func="yes"/>
+			<KeyWord name="goto" func="yes"/>
+			<KeyWord name="hiword" func="yes"/>
+			<KeyWord name="if" func="yes"/>
+			<KeyWord name="ireturn" func="yes"/>
+			<KeyWord name="loword" func="yes"/>
+			<KeyWord name="mask" func="yes"/>
+			<KeyWord name="nobits" func="yes"/>
+			<KeyWord name="noflags" func="yes"/>
+			<KeyWord name="not" func="yes"/>
+			<KeyWord name="nul" func="yes"/>
+			<KeyWord name="offset" func="yes"/>
+			<KeyWord name="own" func="yes"/>
+			<KeyWord name="pop" func="yes"/>
+			<KeyWord name="push" func="yes"/>
+			<KeyWord name="ref" func="yes"/>
+			<KeyWord name="rep" func="yes"/>
+			<KeyWord name="return" func="yes"/>
+			<KeyWord name="true" func="yes"/>
+			<KeyWord name="shift" func="yes"/>
+			<KeyWord name="sizeof" func="yes"/>
+			<KeyWord name="skip" func="yes"/>
+			<KeyWord name="store" func="yes"/>
+			<KeyWord name="string" func="yes"/>
+			<KeyWord name="vfalse" func="yes"/>
+			<KeyWord name="vnul" func="yes"/>
+			<KeyWord name="vregs" func="yes"/>
+			<KeyWord name="vsum" func="yes"/>
+			<KeyWord name="vtrue" func="yes"/>
+			<KeyWord name="weak" func="yes"/>
+			<KeyWord name="with" func="yes"/>
+			<KeyWord name="wtw" func="yes"/>
+			<KeyWord name="xor" func="yes"/>
+			<KeyWord name="wait" func="yes"/>
+			<KeyWord name="set" func="yes"/>
+			<KeyWord name="or" func="yes"/>
+
+			<KeyWord name=".retrive" func="yes"/>
+			<KeyWord name=".retrieve" func="yes"/>
+			<KeyWord name=".matrix" func="yes"/>
+			<KeyWord name=".complex" func="yes"/>
+			<KeyWord name=".float" func="yes"/>
+			<KeyWord name=".double" func="yes"/>
+			<KeyWord name=".align" func="yes"/>
+			<KeyWord name=".branch" func="yes"/>
+			<KeyWord name=".wait" func="yes"/>
+			<KeyWord name=".repeat" func="yes"/>
+			<KeyWord name=".endrepeat" func="yes"/>
+			<KeyWord name="begin" func="yes"/>
+			<KeyWord name="local" func="yes"/>
+			<KeyWord name="global" func="yes"/>
+			<KeyWord name="import" func="yes"/>
+			<KeyWord name="from" func="yes"/>
+			<KeyWord name="struct" func="yes"/>
+			<KeyWord name="end" func="yes"/>
+			<KeyWord name="label" func="yes"/>
+			<KeyWord name="macro" func="yes"/>
+			<KeyWord name="extern" func="yes"/>
+			<KeyWord name="word" func="yes"/>
+			<KeyWord name="long" func="yes"/>
+
+			<KeyWord name="fp0_lmask" func="yes"/>
+			<KeyWord name="fp0_hmask" func="yes"/> 
+			<KeyWord name="fp1_lmask" func="yes"/> 
+			<KeyWord name="fp1_hmask" func="yes"/> 
+			<KeyWord name="fp2_lmask" func="yes"/> 
+			<KeyWord name="fp2_hmask" func="yes"/> 
+			<KeyWord name="fp3_lmask" func="yes"/> 
+			<KeyWord name="fp3_hmask" func="yes"/>
+			
+			<KeyWord name="fp0_flags" func="yes"/>
+			<KeyWord name="fp1_flags" func="yes"/> 
+			<KeyWord name="fp2_flags" func="yes"/> 
+			<KeyWord name="fp3_flags" func="yes"/> 
+			<KeyWord name="fp_pack_exp" func="yes"/> 
+			
+			<KeyWord name="vlen" func="yes"/>
+			<KeyWord name="vreg0" func="yes"/>
+			<KeyWord name="vreg1" func="yes"/>
+			<KeyWord name="vreg2" func="yes"/>
+			<KeyWord name="vreg3" func="yes"/>
+			<KeyWord name="vreg4" func="yes"/>
+			<KeyWord name="vreg5" func="yes"/>
+			<KeyWord name="vreg6" func="yes"/>
+			<KeyWord name="vreg7" func="yes"/>
+			<KeyWord name="ar0" func="yes"/>
+			<KeyWord name="ar1" func="yes"/>
+			<KeyWord name="ar2" func="yes"/>
+			<KeyWord name="ar3" func="yes"/>
+			<KeyWord name="ar4" func="yes"/>
+			<KeyWord name="ar5" func="yes"/>
+			<KeyWord name="ar6" func="yes"/>
+			<KeyWord name="ar7" func="yes"/>
+			<KeyWord name="gr0" func="yes"/>
+			<KeyWord name="gr1" func="yes"/>
+			<KeyWord name="gr2" func="yes"/>
+			<KeyWord name="gr3" func="yes"/>
+			<KeyWord name="gr4" func="yes"/>
+			<KeyWord name="gr5" func="yes"/>
+			<KeyWord name="gr6" func="yes"/>
+			<KeyWord name="gr7" func="yes"/>
+			<KeyWord name="pc" func="yes"/>
+			<KeyWord name="pswr" func="yes"/>
+			<KeyWord name="sir" func="yes"/>
+			<KeyWord name="intr" func="yes"/>
+			<KeyWord name="f1cr" func="yes"/>
+			<KeyWord name="f1crh" func="yes"/>
+			<KeyWord name="f1crl" func="yes"/>
+			<KeyWord name="f2cr" func="yes"/>
+			<KeyWord name="f2crh" func="yes"/>
+			<KeyWord name="f2crl" func="yes"/>
+			<KeyWord name="vr" func="yes"/>
+			<KeyWord name="vrh" func="yes"/>
+			<KeyWord name="vrl" func="yes"/>
+			<KeyWord name="nb1" func="yes"/>
+			<KeyWord name="nb1h" func="yes"/>
+			<KeyWord name="nb1l" func="yes"/>
+			<KeyWord name="sb" func="yes"/>
+			<KeyWord name="sbh" func="yes"/>
+			<KeyWord name="sbl" func="yes"/>
+			<KeyWord name="sp" func="yes"/>
+			<KeyWord name="gmicr" func="yes"/>
+			<KeyWord name="lmicr" func="yes"/>
+			<KeyWord name="oca0" func="yes"/>
+			<KeyWord name="oca1" func="yes"/>
+			<KeyWord name="ica0" func="yes"/>
+			<KeyWord name="ica1" func="yes"/>
+			<KeyWord name="occ0" func="yes"/>
+			<KeyWord name="occ1" func="yes"/>
+			<KeyWord name="icc0" func="yes"/>
+			<KeyWord name="icc1" func="yes"/>
+			<KeyWord name="dor0" func="yes"/>
+			<KeyWord name="dor1" func="yes"/>
+			<KeyWord name="dir0" func="yes"/>
+			<KeyWord name="dir1" func="yes"/>
+			<KeyWord name="t0" func="yes"/>
+			<KeyWord name="t1" func="yes"/>
+			<KeyWord name="wfifo" func="yes"/>
+			<KeyWord name="afifo" func="yes"/>
+			<KeyWord name="data" func="yes"/>
+			<KeyWord name="ram" func="yes"/>
+
+  
+		</AutoComplete>
+</NotepadPlus>
