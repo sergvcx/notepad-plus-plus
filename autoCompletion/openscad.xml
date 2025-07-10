@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<NotepadPlus>
+	<!-- language doesnt really mean anything, its more of a comment -->
+	<AutoComplete language="OpenSCAD">
+		<!--
+		Environment specifies how the language should be interpreted. ignoreCase makes autocomplete
+		ignore any casing, start and stopFunc specify what chars a function starts and stops with.
+		param specifies parameter separator and terminal can be used to specify a character that stops
+		any function. Using the same character for different functions results in undefined behaviour.
+		
+		05/11/2009
+		The basic word character are : A-Z a-z 0-9 and '_' *
+		If your function name contains other characters,
+		add your characters in "additionalWordChar" attribute (without separator)
+		in order to make calltip hint work
+		-->
+		<Environment ignoreCase="yes" startFunc="(" stopFunc=")" paramSeparator="," terminal=";" additionalWordChar=""/>
+
+		<KeyWord name="$children"/>
+		<KeyWord name="$parent_module"/>
+		<KeyWord name="abs("/>
+		<KeyWord name="acos("/>
+		<KeyWord name="asin("/>
+		<KeyWord name="assign(" />
+		<KeyWord name="atan("/>
+		<KeyWord name="atan2("/>
+<!--	<KeyWord name="auto=false"/>		default -->
+		<KeyWord name="auto=true"/>
+		<KeyWord name="auto=["/>
+		<KeyWord name="ceil("/>
+		<KeyWord name="center=true"/>
+		<KeyWord name="center=false"/>
+		<KeyWord name="children();"/>
+		<KeyWord name="circle("/>
+		<KeyWord name="color("/>
+		<KeyWord name="concat("/>  <!-- actually in 2014.03+ --> 
+		<KeyWord name="convexity="/>
+		<KeyWord name="cos("/>
+		<KeyWord name="cross("/>
+		<KeyWord name="cube(["/>
+		<KeyWord name="cylinder("/>
+		<KeyWord name="d="/>
+		<KeyWord name="d1="/>
+		<KeyWord name="d2="/>
+		<KeyWord name="difference(){"/>
+		<KeyWord name="dxf_cross(file="/>
+		<KeyWord name="dxf_dim(file="/>
+		<KeyWord name="echo("/>
+		<KeyWord name="else{ "/>
+		<KeyWord name="exp("/>
+		<KeyWord name="fa="/>
+		<KeyWord name="faces="/>
+		<KeyWord name="false"/>
+<!--		<KeyWord name="file="/>			-->
+		<KeyWord name="floor("/>
+		<KeyWord name="fn="/>
+		<KeyWord name="for ("/>
+		<KeyWord name="fs="/>
+		<KeyWord name="function "/>
+		<KeyWord name="height="/>
+		<KeyWord name="hull(){"/>
+		<KeyWord name="if ("/>
+		<KeyWord name="import("/>
+		<KeyWord name="include &lt;"/>
+		<KeyWord name="intersection(){"/>
+		<KeyWord name="intersection_for("/>
+		<KeyWord name="layer="/>
+		<KeyWord name="len("/>
+		<KeyWord name="linear_extrude(height="/>
+		<KeyWord name="ln("/>
+		<KeyWord name="log("/>
+		<KeyWord name="lookup("/>
+		<KeyWord name="max("/>
+		<KeyWord name="min("/>
+		<KeyWord name="minkowski(){"/>
+		<KeyWord name="mirror(["/>
+		<KeyWord name="module "/>
+		<KeyWord name="multimatrix(m="/>
+		<KeyWord name="name="/>
+		<KeyWord name="norm("/> 
+		<KeyWord name="offset(r="/>
+		<KeyWord name="offset(delta="/>
+		<KeyWord name="offset" func="yes">
+			<Overload 
+				retVal="" 
+				descr="Offset generates a new 2d interior or exterior outline from an existing outline.here are two modes of operation. radial and offset. ">
+				<Param name="r/delta" />
+				<Param name="chamfer=true/false" />
+			</Overload>
+		</KeyWord>
+		
+		
+		<KeyWord name="origin=["/>
+		<KeyWord name="parent_module()"/>
+		<KeyWord name="paths="/>
+		<KeyWord name="polygon(points= [ ["/>
+		<KeyWord name="polyhedron(points= [ ["/>
+		<KeyWord name="pow("/>
+		<KeyWord name="projection("/>
+		<KeyWord name="rands("/>
+		<KeyWord name="render(convexity="/>
+		<KeyWord name="resize(["/>
+		<KeyWord name="rotate(["/>
+		<KeyWord name="rotate_extrude(convexity="/>
+		<KeyWord name="round("/>
+		<KeyWord name="r="/>
+		<Keyword name="r1="/>
+		<Keyword name="r2="/>
+		<KeyWord name="scale(["/>
+		<KeyWord name="search("/>
+		<KeyWord name="sign("/>
+		<KeyWord name="sin("/>
+		<keyword name="size="/>
+		<KeyWord name="slices="/>
+		<KeyWord name="sphere("/>
+		<KeyWord name="sqrt("/>
+		<KeyWord name="square(["/>
+		<KeyWord name="square"  func="yes">
+			<Overload 
+				retVal="" 
+				descr="Creates a square or rectangle in the first quadrant. When center is true the square is centered on the origin. Argument names are optional if given in the order shown here.">
+				<Param name="size=[x, y]" />
+				<Param name="center=true/false" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="str("/>
+		<KeyWord name="surface(file="/>
+		<KeyWord name="tan("/>
+		<KeyWord name="translate(["/>
+		<KeyWord name="true"/>
+		<KeyWord name="twist="/>
+		<KeyWord name="undef"/>
+		<KeyWord name="union(){"/>
+		<KeyWord name="use &lt;"/>
+		<KeyWord name="version()"/>
+		<KeyWord name="version_num()"/>
+		
+		
+		<KeyWord name="frame_ext" func="yes">
+			<Overload retVal=""  descr="Creates rounded frame with external defined sizes">
+				<Param name="x=length" />
+				<Param name="y=width" />
+				<Param name="z=height" />
+				<Param name="t=thickness" />
+				<Param name="r=ext radius" />
+				<Param center="true/false" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="frame_int" func="yes">
+			<Overload retVal=""  descr="Creates rounded frame with internal defined sizes">
+				<Param name="x=length" />
+				<Param name="y=width" />
+				<Param name="z=height" />
+				<Param name="t=thickness" />
+				<Param name="r=int radius" />
+				<Param center="true/false" />
+			</Overload>
+		</KeyWord>
+		
+		
+		frame_ext(x,y,z,w,r){
+		
+		</AutoComplete>
+</NotepadPlus>
