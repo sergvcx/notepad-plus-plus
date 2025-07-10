@@ -1,4 +1,4 @@
-"# notepad-plus-plus" 
+# notepad-plus-plus
 
 https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.8.2/npp.8.8.2.portable.zip
 
