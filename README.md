@@ -8,3 +8,7 @@ git remote add origin https://github.com/sergvcx/notepad-plus-plus.git
 git fetch
 git checkout main 
 ````
+
+````
+git remote set-url origin git@github.com:sergvcx/notepad-plus-plus.git
+````
