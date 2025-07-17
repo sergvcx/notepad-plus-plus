@@ -17,7 +17,7 @@
 				displayMode="$functionName$">
 				
 				<functionName>
-					<nameExpr expr=" [\w]*"/>
+					<nameExpr expr=" --[\w]*"/>
 				</functionName>
 				
 			</function>

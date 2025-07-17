@@ -11,12 +11,12 @@
 <NotepadPlus>			
 	<functionList>
 		<!-- ======================================================= [ NeuroMatrix ] -->
-		<parser id         ="NeuroMatrix" displayName="NeuroMatrix" commentExpr="((/\*.*?\*))">
+		<parser id         ="map" displayName="NeuroMatrixMap" commentExpr="((/\*.*?\*))">
 			<function
-				mainExpr="(^[\t ]*&lt;[\w]+&gt;)|(^[\t ]*[\w]+:)" 
+				mainExpr="^(\.[\w\.]+)" 
 				displayMode="$functionName$">
 				<functionName>
-					<nameExpr expr="\w*"/>
+					<nameExpr expr="[\.\w]*"/>
 				</functionName>
 				
 			</function>
