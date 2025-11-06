@@ -140,7 +140,8 @@
 			<association id= "map.xml"	userDefinedLangName="map"/>
 			<association id= "asciidoc.xml"	userDefinedLangName="Asciidoc"/>
 			<association id= "md.xml"	userDefinedLangName="Markdown (preinstalled dark mode)"/>
-			<association id= "mk.xml"	userDefinedLangName="Makefile"/>
+			<!--<association id= "mk.xml"	userDefinedLangName="Makefile"/> это не работает -->
+			<association id= "mk.xml"	langID= "10"/>
 			
 			<!-- ======================================================================== -->
 		</associationMap>

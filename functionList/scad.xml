@@ -11,13 +11,13 @@
 <NotepadPlus>			
 	<functionList>
 		<!-- ======================================================= [ OpenSCAD ] -->
-		<parser id         ="scad_function" displayName="OpenSCAD">
+		<parser id         ="scad_function" displayName="openscad">
 			<function
-				mainExpr="^[\t ]*module[\t ]+([\w]+)[\t ]*\(" 
+				mainExpr="^\h*(module|function)\h+\w+\s*\(" 
 				displayMode="$functionName$">
 				
 				<functionName>
-					<nameExpr expr=" --[\w]*"/>
+					 <nameExpr expr="^\h*(module|function)\h+\K\w+"/>
 				</functionName>
 				
 			</function>
